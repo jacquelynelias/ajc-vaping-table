@@ -222,6 +222,10 @@
                         text-align:right;
                     }
                 }
+
+                body {
+                    height:900px;
+                }
             </style>     
 
     </head>
@@ -330,6 +334,7 @@
                     var table = $('#table_id')
                     console.log(table)
                     table.DataTable( {
+                        "bLengthChange": false,
                         "columns": [
                             { "type": "string" },
                             { "type": "string" },
